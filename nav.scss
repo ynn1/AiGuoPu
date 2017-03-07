@@ -9,12 +9,12 @@ ul,li{
 a{
     text-decoration: none;
 }
-$Width:1060px;
+$Width:1250px;
 .nav{
-    width:1060px;
+    width:$Width;
     height:100px;
     margin:0 auto;
-    background:papayawhip;
+    padding-right:50px;
 }
 @mixin float1{
     float:left;
@@ -50,7 +50,7 @@ $Width:1060px;
      padding-top:10px;
 }
 .center{
-    margin-left:80px;
+    margin-left:200px;
     @include float1;
 }
 .center li{
@@ -77,6 +77,7 @@ a:hover{
 }
 .nav-right{
     margin-left:10px;
+    float:right;
     li{
         float:left;
         padding:0 10px;
