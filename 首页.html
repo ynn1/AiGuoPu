@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/demo01.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/AutoPlay.js"></script>
+		<script src="js/move.js"></script>
+	</head>
+	<body>
+		<div id="box">
+			<div class="nav"></div>
+			<div id="banner"></div>
+		</div>
+		
+	</body>
+	<script>
+		$(function(){
+			$(".nav").load("nav.html");
+			var l = new AutoPlayerImgs(
+				"banner",
+				1421,
+				400,
+				["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg"],
+				["http://www.baidu.com","http://www.taobao.com","http://www.jd.cn","http://www.sohu.com","http://www.mobiletrain.org"],
+				1500,
+				{width:20,height:20,bgColor:"white",highLightColor:"#0f0"}
+			);
+		l.go();	
+		})
+	</script>
+</html>

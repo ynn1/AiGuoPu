@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#box {
+  width: 100%;
+  margin: 0 auto; }
+
+.nav {
+  width: 1060px;
+  height: 100px;
+  background: palegoldenrod; }
+
+#banner {
+  width: 1421px;
+  height: 400px;
+  position: relative; }
+
+/*# sourceMappingURL=demo01.css.map */
