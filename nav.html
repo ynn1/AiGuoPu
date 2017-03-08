@@ -4,20 +4,29 @@
 	<span class="nav-left1">爱果铺</span>
 	<span class="nav-left2">Lover Fruit</span>
 	<ul class="center">
-		<li><a href="#">首页</a><p><a href="#">Home</a></p></li>
-		<li><a href="#">首页</a><p><a href="#">Home</a></p></li>
-		<li><a href="#">首页</a><p><a href="#">Home</a></p></li>
-		<li><a href="#">首页</a><p><a href="#">Home</a></p></li>
-		<li><a href="#">首页</a><p><a href="#">Home</a></p></li>
+		<li class="active"><a href="http://127.0.0.1:8020/AiGuoPu/%E9%A6%96%E9%A1%B5.html">首页</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E9%A6%96%E9%A1%B5.html">Home</a></p></li>
+		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html">鲜果</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html">Fruit</a></p></li>
+		<li><a href="#">生鲜</a><p><a href="#">Fresh</a></p></li>
+		<li><a href="#">礼品</a><p><a href="#">Gift</a></p></li>
+		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E6%B3%A8%E5%86%8C.html">会员</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E6%B3%A8%E5%86%8C.html">VIP Club</a></p></li>
 	</ul>
 	<span class="nav-right">
 		<input class="nav-txt" />
 		<ul>
 			<li>热门:</li>
-			<li><a href="#">热门</a></li>
-			<li><a href="#">热门</a></li>
-			<li><a href="#">热门</a></li>
-			<li><a href="#">热门</a></li>
+			<li><a href="#">橙</a></li>
+			<li><a href="#">提子</a></li>
+			<li><a href="#">蓝莓</a></li>
+			<li><a href="#">苹果</a></li>
 		</ul>
 	</span>
 </div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+	$(".center li").mouseenter(function(){
+		$(this).addClass("active");
+	})
+	$(".center li").mouseleave(function(){
+		$(this).removeClass("active");
+	})
+</script>

@@ -7,11 +7,15 @@ $Width:1350px;
 #box{
     width:1422px;
     margin:0 auto;
+    position:relative;
 }
 .nav{
     width:$Width;
     height:100px;
     margin:0 auto;
+    .center li:first-child{
+        border-bottom: 5px #ADFF2F solid;
+    }
 }
 #banner{
     width:1421px;
@@ -26,7 +30,16 @@ $Width:1350px;
     border-bottom:solid 1px #ccc;
     li{
         float:left;
+        position:relative;
+        overflow:hidden;
+        width:300px;
+        height:140px;
         margin:21px;
+        img{
+            position:absolute;
+            left:0;
+            top:0;
+        }
     }
     li:nth-child(1){
         margin-left:0;
@@ -49,7 +62,33 @@ $Width:1350px;
         float:right;
         color:gray;
     }
+    dt{
+        position:relative;
+        overflow:hidden;
+        img{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        span{
+            width:60px;
+            height:60px;
+            background:red;
+            line-height:30px;
+            text-align:center;
+            color:#fff;
+            font-size:25px;
+            position:absolute;
+            top:-60px;
+            left:0;
+//          display:none;
+        }
+    }
 }
+//.dt1:hover .wrap1{
+////  top:0px;
+//  display:block;
+//}
 .container-center1{
     width:$Width;
     height:750px;
@@ -57,6 +96,15 @@ $Width:1350px;
     margin:0 auto;
       .center1-left{
             float:left;
+            height:612px;
+//          width:248px;
+            position:relative;
+            left:0;
+//          overflow:hidden;
+            img{
+                position:absolute;
+                left:0;
+            }
         }
 }
 @mixin dtp{
@@ -84,7 +132,8 @@ $Width:1350px;
 .center1-right{
     float:left;
     width:1100px;
-    
+    position:relative;
+    left:250px;
     @include dtp;
 }
 @mixin dtp2{
@@ -135,87 +184,22 @@ $Width:1350px;
     width:$Width;
     height:500px;
     margin:0 auto;
-    background:#ccc;
-//      .foot{
-//      width:$Width;
-//      height:500px;
-//  //  border:1px solid #ccc;
-//      color:gray;
-//  }
-//  .footTop{
-//      width:$Width;
-//      height:100px;
-//      border-bottom: 1px solid #ccc;
-//      li{
-//          float:left;
-//          width:335px;
-//          height:60px;
-//          margin-top:20px;
-//          border-left:1px solid #ccc;
-//          text-align:center;
-//          dt{
-//              float:left;
-//              margin:0 40px;
-//          }
-//          dd{
-//              float:left;
-//              line-height:30px;
-//          }
-//      }
-//      li:nth-child(1){
-//          border:none;
-//      }
-//  }
-//  .footCenter{
-//      width:$Width;
-//      height:180px;
-//      border-bottom: 1px solid #ccc;
-//      padding-top:20px;
-//      .footCenterLeft{
-//          color:gray;
-//          float:left;
-//          width:500px;
-//          text-align:center;
-//          p{
-//              line-height:30px;
-//          }
-//      }
-//      .footCenterCenter{
-//          color:gray;
-//          float:left;
-//          dl{
-//              float:left;
-//              margin:0 15px;
-//              text-align:center;
-//              dd{
-//                  line-height:40px;
-//              }
-//          }
-//      }
-//      .footCenterRight{
-//          float:left;
-//          dl{
-//              float:left;
-//              padding:0 20px;
-//              margin-top:10px;
-//          }
-//          dd{
-//              margin:10px 0;
-//              line-height:30px;
-//          }
-//      }
-//  }
-//  .footBottom{
-//      width:$Width;
-//      text-align:center;
-//      p{
-//          line-height:40px;
-//      }
-//      a{
-//          margin:5px;
-//      }
-//      img{
-//          margin-top:10px;
-//      }
-//  }
+}
+.up{
+    width:50px;
+    height:50px;
+    position:fixed;
+    right:0;
+    top:700px;
+    background:#0ff;
+    text-align:center;
+    a{
+        color:#fff;
+        line-height:25px;
+        font-weight: bolder;
+    }
+    a:hover{
+        color:#f00;
+    }
+    
 }

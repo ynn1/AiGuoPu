@@ -59,11 +59,11 @@ a {
     color: gray;
     font-weight: bolder; }
 
+.active {
+  background: #ADFF2F; }
+
 .center li:nth-child(1) {
   border: none; }
-
-.center li:hover {
-  background: greenyellow; }
 
 a:hover {
   color: #0f0; }

@@ -51,7 +51,7 @@ function AutoPlayerImgs(boxId,width,height,imgs,urls,speed,btn){
 		ulObj.style.cssText = "position:absolute;left:580px;bottom:10px;";
 		for(var i=0;i<this.imgs.length;i++){
 			var liObj = document.createElement("li");
-			liObj.style.cssText = "float:left;width:20px;height:20px;border-radius: 50%;background:pink;margin:15px;";
+			liObj.style.cssText = "float:left;width:20px;height:20px;border-radius: 50%;background:#fff;margin:15px;";
 			liObj.ord = i;
 			var that = this;
 			liObj.onmouseover = function(){

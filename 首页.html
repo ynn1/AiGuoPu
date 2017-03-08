@@ -13,20 +13,40 @@
 			<div class="nav"></div>
 			<div id="banner"></div>
 			<div class="container">
+				<!---->
 				<ul class="container-top">
 					<li><img src="img/c-t1.jpg"/></li>
 					<li><img src="img/c-t2.jpg"/></li>
 					<li><img src="img/c-t3.jpg"/></li>
 					<li><img src="img/c-t4.jpg"/></li>
 				</ul>
+				<!--鼠标效果-->
+				<script>
+					$(function(){
+						$(".container-top li img").mouseenter(function(){
+							$(this).animate({
+								"top":"15px"
+							})
+						});
+						$(".container-top li img").mouseleave(function(){
+							$(this).animate({
+								"left":"0",
+								"top":"0"
+							})
+						});
+					})
+				</script>
+				<!---->
 				<div class="container-center1">
-					<p><h2>果园推荐</h2><span>主打热卖，来这里尝鲜</span><a href="###">更多&gt;&gt;</a></p>
+					<p><h2>果园推荐</h2><span>主打热卖，来这里尝鲜</span><a href="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html">更多&gt;&gt;</a></p>
 					<div class="center1-left">
 						<img src="img/center1-left.jpg" /> 
 					</div>
 					<ul class="center1-right">
 						<li><dl>
-							<dt><img src="img/1-270x270-102-UXSXB7Y2.jpg"/></dt>
+							<dt class="dt1"><img src="img/1-270x270-102-UXSXB7Y2.jpg"/>
+								<span class="wrap1">主打热卖</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -36,7 +56,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-11-PTCD3DD6.jpg"/></dt>
+							<dt class="dt2"><img src="img/1-270x270-11-PTCD3DD6.jpg"/>
+								<span class="wrap2">会员专享</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -46,7 +68,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-12266-ACAPHW81.jpg"/></dt>
+							<dt class="dt3"><img src="img/1-270x270-12266-ACAPHW81.jpg"/>
+								<span class="wrap3">主打热卖</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -56,7 +80,9 @@
 							</dd>
 						</dl></li>
 							<li><dl>
-							<dt><img src="img/1-270x270-16-6P8KR7SY.jpg"/></dt>
+							<dt><img src="img/1-270x270-16-6P8KR7SY.jpg"/>
+							    <span class="wrap">打折商品</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -66,7 +92,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-16879-R7CUU5CF.jpg"/></dt>
+							<dt><img src="img/1-270x270-16879-R7CUU5CF.jpg"/>
+								<span class="wrap">主打热卖</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -76,7 +104,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-17052-Y4U5CY6D.jpg"/></dt>
+							<dt><img src="img/1-270x270-17052-Y4U5CY6D.jpg"/>
+								<span class="wrap">主打热卖</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -86,7 +116,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-24-4P53HTTT.jpg"/></dt>
+							<dt><img src="img/1-270x270-24-4P53HTTT.jpg"/>
+								<span class="wrap">主打热卖</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -96,7 +128,9 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-278-YKBH9ATU.jpg"/></dt>
+							<dt class="dt5"><img src="img/1-270x270-278-YKBH9ATU.jpg"/>
+								<span class="wrap5">会员特价</span>
+							</dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -213,10 +247,10 @@
 					</ul>
 				</div>
 				<div class="container-center3">
-					<p><h2>全球鲜果</h2><span>主打热卖，来这里尝鲜</span><a href="###">更多&gt;&gt;</a></p>
+					<p><h2>生鲜美食</h2><span>主打热卖，来这里尝鲜</span><a href="###">更多&gt;&gt;</a></p>
 					<ul class="center2">
 						<li><dl>
-							<dt><img src="img/1-270x270-102-UXSXB7Y2.jpg"/></dt>
+							<dt><img src="img/1-270x270-149-5TS6P298.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -226,7 +260,7 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-11-PTCD3DD6.jpg"/></dt>
+							<dt><img src="img/1-270x270-151-HP8WPSY2.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -236,7 +270,7 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-12266-ACAPHW81.jpg"/></dt>
+							<dt><img src="img/1-270x270-156-49DSPY18.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -246,7 +280,7 @@
 							</dd>
 						</dl></li>
 							<li><dl>
-							<dt><img src="img/1-270x270-16-6P8KR7SY.jpg"/></dt>
+							<dt><img src="img/1-270x270-165-5WDK6DYS.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -319,10 +353,10 @@
 					<div class="img1"><img src="img/rou.jpg" width="1350" /></div>
 				</div>
 				<div class="container-center4">
-					<p><h2>全球鲜果</h2><span>主打热卖，来这里尝鲜</span><a href="###">更多&gt;&gt;</a></p>
+					<p><h2>礼品卡劵</h2><span>主打热卖，来这里尝鲜</span><a href="###">更多&gt;&gt;</a></p>
 					<ul class="center2">
 						<li><dl>
-							<dt><img src="img/1-270x270-102-UXSXB7Y2.jpg"/></dt>
+							<dt><img src="img/1-270x270-427-T2TSKFC3.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -332,7 +366,7 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-11-PTCD3DD6.jpg"/></dt>
+							<dt><img src="img/1-270x270-410-BUWWXWD4.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -342,7 +376,7 @@
 							</dd>
 						</dl></li>
 						<li><dl>
-							<dt><img src="img/1-270x270-12266-ACAPHW81.jpg"/></dt>
+							<dt><img src="img/1-270x270-445-827D6WB8.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -352,7 +386,7 @@
 							</dd>
 						</dl></li>
 							<li><dl>
-							<dt><img src="img/1-270x270-16-6P8KR7SY.jpg"/></dt>
+							<dt><img src="img/1-270x270-427-T2TSKFC3.jpg"/></dt>
 							<dd>
 								<div class="ddleft">
 									<a href="###">云南树莓</a><br />
@@ -374,91 +408,55 @@
 					</ul>
 				</div>
 			</div>
+			<!--内容效果-->
+			<script>
+				$(function(){
+					$(".container ul .dt1").mouseenter(function(){
+						$(".wrap1").animate({
+							"top":"0"
+						})
+					});
+					$(".container ul .dt1").mouseleave(function(){
+						$(".wrap1").animate({
+							"top":"-60px"
+						})
+					});
+					$(".container ul .dt2").mouseenter(function(){
+						$(".wrap2").animate({
+							"top":"0"
+						})
+					});
+					$(".container ul .dt2").mouseleave(function(){
+						$(".wrap2").animate({
+							"top":"-60px"
+						})
+					});
+					$(".center1-left img").mouseenter(function(){
+						$(this).animate({
+							"width":"260px"
+						})
+					});
+					$(".center1-left img").mouseleave(function(){
+						$(this).animate({
+							"width":"248px"
+						})
+					})
+					$(".container ul dl dt img").mouseenter(function(){
+						$(this).animate({
+							"width":"300px"
+						})
+					});
+					$(".container ul dl dt img").mouseleave(function(){
+						$(this).animate({
+							"width":"275px"
+						})
+					});
+				});
+			</script>
+			
 			<!---->
-			<div class="footer">
-				<!--<div class="foot">
-					<ul class="footTop">
-						<li><dl>
-							<dt><img src="img/footer1.jpg"/></dt>
-							<dd><h3>全球源产地直购</h3>
-								<p>100%源产地直购保证</p>
-							</dd>
-						</dl></li>
-						<li><dl>
-							<dt><img src="img/footer2.jpg"/></dt>
-							<dd><h3>全球源产地直购</h3>
-								<p>100%源产地直购保证</p>
-							</dd>
-						</dl></li>
-						<li><dl>
-							<dt><img src="img/footer3.jpg"/></dt>
-							<dd><h3>全球源产地直购</h3>
-								<p>100%源产地直购保证</p>
-							</dd>
-						</dl></li>
-						<li><dl>
-							<dt><img src="img/footer4.jpg"/></dt>
-							<dd><h3>全球源产地直购</h3>
-								<p>100%源产地直购保证</p>
-							</dd>
-						</dl></li>
-					</ul>
-					<div class="footCenter">
-						<div class="footCenterLeft">
-							<img src="img/foot.jpg"/>
-							<p>电话客服:00000000</p>
-							<p>在线客服:11111111</p>
-						</div>
-						<div class="footCenterCenter"/>
-							<dl>
-								<dt><img src="img/guan_ewcode1(1).jpg" /></dt>
-								<dd>天天果园官方微信</dd>
-							</dl>
-							<dl>
-								<dt><img src="img/guan_ewcode2(1).jpg" /></dt>
-								<dd>天天果园官方APP</dd>
-							</dl>	
-						</div>
-						<div class="footCenterRight"/>
-							<dl>
-								<dt><h3>购物指南</h3></dt>
-								<dd><p><a href="###">新用户注册</a></p>
-									<p><a href="###">在线下单</a></p>
-									<p><a href="###">支付方式</a></p>
-								</dd>
-							</dl>
-							<dl>
-								<dt><h3>购物指南</h3></dt>
-								<dd><p><a href="###">新用户注册</a></p>
-									<p><a href="###">在线下单</a></p>
-									<p><a href="###">支付方式</a></p>
-								</dd>
-							</dl>
-							<dl>
-								<dt><h3>购物指南</h3></dt>
-								<dd><p><a href="###">新用户注册</a></p>
-									<p><a href="###">在线下单</a></p>
-									<p><a href="###">支付方式</a></p>
-								</dd>
-							</dl>
-							<dl>
-								<dt><h3>购物指南</h3></dt>
-								<dd><p><a href="###">新用户注册</a></p>
-									<p><a href="###">在线下单</a></p>
-									<p><a href="###">支付方式</a></p>
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="footBottom">
-						<p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
-						<p><a href="###">天天果园</a><a href="###">天天果园</a></p>
-						<p><a href="###"><img src="img/guan_shgs.gif"/></a>
-							<a href="###"><img src="img/guan_wgdjp.png" height="47"/></a>
-						</p>
-					</div>
-				</div>-->
-			</div>
+			<div class="footer"></div>
+			<div class="up"><a href="#">顶部TOP</a></div>
 		</div>
 		
 	</body>

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: gray; }
+
+#box {
+  width: 1350px;
+  margin: 0 auto; }
+
+.nav {
+  width: 1350px;
+  height: 100; }
+
+/*# sourceMappingURL=fruit.css.map */
