@@ -18,20 +18,20 @@
 				<div class="containerRight">
 					<!--登录框-->
 					<form class="dl">
-						<p>用户名:<input type="text" class="name1"/></p>
+						<p>用户名:<input type="text" placeholder="请输入用户名" class="name1"/></p>
 						<div><span class="nametxt1"></span></div>
-						<p>密码:<input type="password" class="pwd1"/></p>
+						<p>密码:<input type="password" placeholder="请输入密码" class="pwd1"/></p>
 						<div><span class="pwdtxt1"></span></div>
 						<input type="button" value="登录" class="btn1">
 						<!--<input type="button" value="注册" class="btn2">-->
 					</form>
 					<!--注册框-->
 					<form class="zc">
-						<p>用户名:<input type="text" class="name2"/></p>
+						<p>用户名:<input type="text" placeholder="请设置用户名" class="name2"/></p>
 						<div><span class="nametxt2"></span></div>
-						<p>密码:<input type="password" class="pwd2"></p>
+						<p>密码:<input type="password" placeholder="密码由6-12位字母数字下划线组成" class="pwd2"></p>
 						<div><span class="pwdtxt2"></span></div>
-						<p>确认密码:<input type="password" class="nextpwd2"></p>
+						<p>确认密码:<input type="password" placeholder="请保持与输入密码一致" class="nextpwd2"></p>
 						<div><span class="nextpwdtxt2"></span></div>
 						<p>验证码:<input type="text" class="yzm" />
 						<input type="text" class="yzm2" />
@@ -107,9 +107,6 @@
 				var fg=0;
 				$(".name2").blur(function(){
 					$(".nametxt2").text("");
-//					$(".pwdtxt2").text("");
-//					$(".nextpwdtxt2").text("");
-//					console.log($(".name2").val());
 					for(let i=0;i<user.length;i++){
 						if($(".name2").val()==user[i].name){
 							$(".nametxt2").text("#用户名已存在")
@@ -136,7 +133,7 @@
 									$(".nextpwdtxt2").text("确认密码不能为空");
 									fg++;
 								}else if($(".nextpwd2").val()==$(".pwd2").val()&&$(".nextpwd2").val()!=""){
-									$(".nextpwdtxt2").text("密码设置成功");
+									$(".nextpwdtxt2").text("");
 									fg=0;
 								}else{
 									$(".nextpwdtxt2").text("#请保持与输入密码一致");
@@ -165,6 +162,7 @@
 				}
 				$(".yzm2").val(n);
 				$(".change").click(function(){
+					$(".yzm").val("");
 					var n=parseInt(Math.random()*10000);
 					//判断验证的位数
 					if(n<1000&&n>100){		//验证码为三位数时
@@ -186,18 +184,22 @@
 					}
 				})
 				//注册提交
-				$(".zhuce").click(function(){
-					$(".name2").val("");
+				
+				$(".zhuce").click(function(){				
+//					$(".nametxt2").text("");
+//					$(".pwdtxt2").text("");
+//					$(".nextpwdtxt2").text("");
+//					$(".yzmtxt").text("");
+					if(($(".nametxt2").text()=="")&&($(".pwdtxt2").text()=="")&&($(".nextpwdtxt2").text()=="")&&($(".yzmtxt").text()=="")&&($(".name2").val()!="")&&($(".pwd2").val()!="")&&($(".nextpwd2").val()!="")&&($(".yzm").val()!="")){
+//						alert("注册成功!");
+						location="https://huodong.fruitday.com/cms/indexpc/1201?region_id=106092";
+						$(".name2").val("");
 					$(".pwd2").val("");
 					$(".nextpwd2").val("");
 					$(".yzm").val("");
-					$(".nametxt2").text("");
-					$(".pwdtxt2").text("");
-					$(".nextpwdtxt2").text("");
-					$(".yzmtxt").text("");
-//					location="";
-					console.log(fg);
-					alert("注册成功!")
+					}else{
+						alert("请完善注册信息");
+					}
 				})
 			})
 		})

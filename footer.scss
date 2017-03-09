@@ -18,12 +18,15 @@ a{
     width:$Width;
     height:500px;
     margin:0 auto;
-//  border:1px solid #ccc;
+    position:relative;
+    border-top:1px solid #ccc;
     color:gray;
 }
 .footTop{
     width:$Width;
     height:100px;
+    position:absolute;
+    top:0;
     border-bottom: 1px solid #ccc;
     li{
         float:left;
@@ -49,6 +52,8 @@ a{
     width:$Width;
     height:180px;
     border-bottom: 1px solid #ccc;
+    position:absolute;
+    top:100px;
     padding-top:20px;
     .footCenterLeft{
         color:gray;
@@ -87,6 +92,8 @@ a{
 .footBottom{
     width:$Width;
     text-align:center;
+    position:absolute;
+    top:320px;
     p{
         line-height:40px;
     }

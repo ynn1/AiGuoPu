@@ -6,8 +6,8 @@
 	<ul class="center">
 		<li class="active"><a href="http://127.0.0.1:8020/AiGuoPu/%E9%A6%96%E9%A1%B5.html">首页</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E9%A6%96%E9%A1%B5.html">Home</a></p></li>
 		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html">鲜果</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html">Fruit</a></p></li>
-		<li><a href="#">生鲜</a><p><a href="#">Fresh</a></p></li>
-		<li><a href="#">礼品</a><p><a href="#">Gift</a></p></li>
+		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E7%94%9F%E9%B2%9C.html">生鲜</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E7%94%9F%E9%B2%9C.html">Fresh</a></p></li>
+		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E7%A4%BC%E5%93%81.html">礼品</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E7%A4%BC%E5%93%81.html">Gift</a></p></li>
 		<li><a href="http://127.0.0.1:8020/AiGuoPu/%E6%B3%A8%E5%86%8C.html">会员</a><p><a href="http://127.0.0.1:8020/AiGuoPu/%E6%B3%A8%E5%86%8C.html">VIP Club</a></p></li>
 	</ul>
 	<span class="nav-right">
@@ -28,5 +28,20 @@
 	})
 	$(".center li").mouseleave(function(){
 		$(this).removeClass("active");
+	})
+	$(".center li:eq(0)").click(function(){
+		location="http://127.0.0.1:8020/AiGuoPu/%E9%A6%96%E9%A1%B5.html";
+	});
+	$(".center li:eq(1)").click(function(){
+		location="http://127.0.0.1:8020/AiGuoPu/%E9%B2%9C%E6%9E%9C.html";
+	});
+	$(".center li:eq(2)").click(function(){
+		location="http://127.0.0.1:8020/AiGuoPu/%E7%94%9F%E9%B2%9C.html";
+	});
+	$(".center li:eq(3)").click(function(){
+		location="http://127.0.0.1:8020/AiGuoPu/%E7%A4%BC%E5%93%81.html";
+	});
+	$(".center li:eq(4)").click(function(){
+		location="http://127.0.0.1:8020/AiGuoPu/%E6%B3%A8%E5%86%8C.html";
 	})
 </script>
