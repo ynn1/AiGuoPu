@@ -67,6 +67,18 @@ a {
             position: absolute;
             left: 0;
             top: 0; }
+          .container .containerCenter ul li dl dt p {
+            position: absolute;
+            display: block;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            bottom: -60px; }
+            .container .containerCenter ul li dl dt p i {
+              position: absolute;
+              left: 0; }
         .container .containerCenter ul li dl dd {
           width: 265px; }
           .container .containerCenter ul li dl dd .ddleft {
@@ -75,5 +87,20 @@ a {
               float: none; }
           .container .containerCenter ul li dl dd a {
             float: right; }
+
+.up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  top: 700px;
+  background: #0ff;
+  text-align: center; }
+  .up a {
+    color: #fff;
+    line-height: 25px;
+    font-weight: bolder; }
+  .up a:hover {
+    color: #f00; }
 
 /*# sourceMappingURL=fruit.css.map */

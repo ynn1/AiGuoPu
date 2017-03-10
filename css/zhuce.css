@@ -32,7 +32,7 @@ a {
   border-bottom: solid 1px #ccc;
   text-align: center;
   padding: 30px; }
-  .container span {
+  .container i {
     color: #f00;
     font-size: 12px; }
   .container .containerLeft {
@@ -58,9 +58,11 @@ a {
     .container .containerRight .dl {
       margin-top: 100px; }
       .container .containerRight .dl input {
-        margin: 10px; }
+        margin: 10px;
+        width: 350px;
+        height: 40px; }
       .container .containerRight .dl .btn1 {
-        width: 50px;
+        width: 100px;
         background: #ADFF2F; }
       .container .containerRight .dl .btn2 {
         width: 50px;
@@ -70,13 +72,26 @@ a {
       margin-top: 100px; }
       .container .containerRight .zc div {
         height: 20px; }
+      .container .containerRight .zc span {
+        float: left;
+        font-size: 25px;
+        margin: 10px; }
+      .container .containerRight .zc input {
+        width: 300px;
+        height: 40px; }
       .container .containerRight .zc .yzm {
-        width: 80px; }
+        width: 80px;
+        float: left; }
       .container .containerRight .zc .yzm2 {
-        width: 80px; }
+        width: 80px;
+        height: 40px;
+        background: #ccc;
+        display: inline-block;
+        margin-left: 40px; }
       .container .containerRight .zc .change {
         width: 80px;
-        background: #00FF00; }
+        background: #00FF00;
+        margin: 0 40px; }
       .container .containerRight .zc .zhuce {
         width: 150px;
         background: #ADFF2F; }

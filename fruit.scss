@@ -66,7 +66,6 @@ a{
                  margin-left:5px;
                 dl{
                     width:265px;
-//                 
                     dt{
                         height:270px;
                         width:265px;
@@ -78,6 +77,20 @@ a{
                             position:absolute;
                             left:0;
                             top:0;
+                        }
+                        p{
+                            position:absolute;
+                            display:block;
+                            background:rgba(0,0,0,0.5);
+                            width:100%;
+                            height:30px;
+                            line-height:30px;
+                            color:#fff;
+                            bottom:-60px;
+                            i{
+                                position:absolute;
+                                left:0;
+                            }
                         }
                     }
                     dd{
@@ -96,4 +109,22 @@ a{
             }
         }
     }
+}
+.up{
+    width:50px;
+    height:50px;
+    position:fixed;
+    right:0;
+    top:700px;
+    background:#0ff;
+    text-align:center;
+    a{
+        color:#fff;
+        line-height:25px;
+        font-weight: bolder;
+    }
+    a:hover{
+        color:#f00;
+    }
+    
 }

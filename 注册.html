@@ -9,40 +9,40 @@
 	<body>
 		<div id="box">
 			<div class="nav"></div>
-			<!--内容部分开始-->
+			<!---------------------------内容部分开始-------------------------->
 			<div class="container">
 				<div class="containerLeft">
 					<img src="img/zhuce.jpg" />
 					<a href="###"><input type="button" value="会员注册" class="btn"/></a>
 				</div>
 				<div class="containerRight">
-					<!--登录框-->
+					<!-------------------------登录框-------------------------->
 					<form class="dl">
-						<p>用户名:<input type="text" placeholder="请输入用户名" class="name1"/></p>
-						<div><span class="nametxt1"></span></div>
-						<p>密码:<input type="password" placeholder="请输入密码" class="pwd1"/></p>
-						<div><span class="pwdtxt1"></span></div>
+						<p><input type="text" placeholder="请输入用户名" class="name1"/></p>
+						<div><i class="nametxt1"></i></div>
+						<p><input type="password" placeholder="请输入密码" class="pwd1"/></p>
+						<div><i class="pwdtxt1"></i></div>
 						<input type="button" value="登录" class="btn1">
 						<!--<input type="button" value="注册" class="btn2">-->
 					</form>
-					<!--注册框-->
+					<!-------------------------注册框--------------------------->
 					<form class="zc">
-						<p>用户名:<input type="text" placeholder="请设置用户名" class="name2"/></p>
-						<div><span class="nametxt2"></span></div>
-						<p>密码:<input type="password" placeholder="密码由6-12位字母数字下划线组成" class="pwd2"></p>
-						<div><span class="pwdtxt2"></span></div>
-						<p>确认密码:<input type="password" placeholder="请保持与输入密码一致" class="nextpwd2"></p>
-						<div><span class="nextpwdtxt2"></span></div>
-						<p>验证码:<input type="text" class="yzm" />
-						<input type="text" class="yzm2" />
+						<p><span>用户名:</span>&nbsp;<input type="text" placeholder="请设置用户名" class="name2"/></p>
+						<div><i class="nametxt2"></i></div>
+						<p><span>密码:</span>&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密码由6-12位字母数字下划线组成" class="pwd2"></p>
+						<div><i class="pwdtxt2"></i></div>
+						<p><span>确认密码:</span><input type="password" placeholder="请保持与输入密码一致" class="nextpwd2"></p>
+						<div><i class="nextpwdtxt2"></i></div>
+						<p><span>验证码:</span>&nbsp;<input type="text" class="yzm" />
+						<span class="yzm2"></span>
 						<input type="button" class="change" value="换一批"/>			
 						</p>
-						<div><p><span class="yzmtxt"></span></p></div>
+						<div><p><i class="yzmtxt"></i></p></div>
 						<input type="button" class="zhuce" value="注册"/>
 					</form>
 				</div>
 			</div>
-			<!--尾部-->
+			<!-----------------------------------尾部--------------------------->
 			<div class="footer"></div>
 			<div class="up"><a href="#">顶部TOP</a></div>
 		</div>
@@ -77,7 +77,7 @@
 			var flag=0;
 			$.getJSON("user.json",function(user){
 				console.log(user);
-				//登录框设置(模拟后台)
+				//----------------------------------登录框设置(模拟后台)-------------------------------
 				$(".btn1").click(function(){
 					$(".nametxt1").text("");
 					$(".pwdtxt1").text("");
@@ -102,7 +102,7 @@
 						$(".nametxt1").text("#用户名不存在")
 					}
 				})
-				//注册框设置
+				//------------------------------注册框设置-------------------------------------
 				//用户名设置
 				var fg=0;
 				$(".name2").blur(function(){
@@ -160,7 +160,7 @@
 				}else if(n<10){
 					n=""+0+0+0+n;
 				}
-				$(".yzm2").val(n);
+				$(".yzm2").text(n);
 				$(".change").click(function(){
 					$(".yzm").val("");
 					var n=parseInt(Math.random()*10000);
@@ -172,11 +172,11 @@
 					}else if(n<10){
 						n=""+0+0+0+n;
 					}
-					$(".yzm2").val(n);
+					$(".yzm2").text(n);
 				})
 				//验证码的输入
 				$(".yzm").blur(function(){
-					if($(".yzm").val()==$(".yzm2").val()){
+					if($(".yzm").val()==$(".yzm2").text()){
 						$(".yzmtxt").text("");
 					}else{
 						$(".yzmtxt").text("#验证码输入错误!")

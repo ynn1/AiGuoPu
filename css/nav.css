@@ -78,11 +78,16 @@ a:hover {
     .nav-right li a {
       color: gray;
       font-size: 14px; }
+  .nav-right .nav-right1 {
+    float: left; }
   .nav-right input {
     width: 250px;
     height: 25px;
     margin-top: 20px; }
   .nav-right ul {
     margin-top: 10px; }
+  .nav-right .jr {
+    float: right;
+    margin: 10px; }
 
 /*# sourceMappingURL=nav.css.map */

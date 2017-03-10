@@ -71,9 +71,7 @@ $Width:1250px;
 .center li:nth-child(1){
     border:none;
 }
-//.center li:hover{
-//  background:greenyellow;
-//}
+
 a:hover{
     color:#0f0;
 }
@@ -89,6 +87,9 @@ a:hover{
           font-size:14px;
         }
     }
+    .nav-right1{
+        float:left;
+    }
     input{
         width:250px;
         height:25px;
@@ -96,6 +97,11 @@ a:hover{
     }
     ul{
         margin-top:10px;
+//      float:left;
+    }
+    .jr{
+        float:right;
+        margin:10px;
     }
 }
 

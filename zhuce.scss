@@ -35,7 +35,7 @@ a{
     border-bottom:solid 1px #ccc;
     text-align:center;
     padding:30px;
-    span{
+    i{
         color:#f00;
         font-size:12px;
     }
@@ -69,9 +69,11 @@ a{
             margin-top:100px;
             input{
                 margin:10px;
+                width:350px;
+                height:40px;
             }
             .btn1{
-                width:50px;
+                width:100px;
                 background:#ADFF2F;
             }
             .btn2{
@@ -82,18 +84,34 @@ a{
         .zc{
             display:none;
             margin-top:100px;
+//          border:solid 1px red;
             div{
                 height:20px;
             }
+            span{
+                float:left;
+                font-size: 25px;
+                margin:10px;
+            }
+            input{
+                width:300px;
+                height:40px;
+            }
             .yzm{
                 width:80px;
+                float:left;
             }
             .yzm2{
                 width:80px;
+                height:40px;
+                background:#ccc;
+                display:inline-block;
+                margin-left:40px;
             }
             .change{
                 width:80px;
                 background:#00FF00;
+                margin:0 40px;
             }
            
             .zhuce{
