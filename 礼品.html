@@ -15,6 +15,7 @@
 		<div id="box">
 			<div class="nav"></div>
 			<div class="container">
+				<!---------顶部商品分类列表------->
 				<div class="containerTop">
 					<p><span>场合     <a class="all" href="###">全部</a></span>
 						<ul>
@@ -33,6 +34,7 @@
 						<li><a href="###">200以上</a></li>
 					</ul></p>
 				</div>
+				<!--------内容部分商品列表（动态添加）------------->
 				<div class="containerCenter">
 					<!--<ul>
 						<li><dl>
@@ -57,61 +59,23 @@
 			$(".nav").load("nav.html");
 			$(".nav .center li:eq(0)").removeClass("active");
 			$(".footer").load("footer.html");
-//			//鼠标效果
-//			$(".containerCenter ul dl dt img").mouseenter(function(){
-//				console.log($(this));
-//				$(this).animate({
-//					"width":"300px"
-//				})
-//			});
-//			$(".containerCenter ul dl dt img").mouseleave(function(){
-//				$(this).animate({
-//					"width":"275px"
-//				})
-//			});
-//			//点击切换
-//			$(".containerTop a").click(function(){
-//				$(this).css({
-//					"color":"red"
-//				})	
-//				
-//			})
 			//------------------------------------动态创建内容-------------------------------
 			//----------------模拟后台----------------------
 			let htmlStr="<ul>";
 			$.getJSON("fruit.json",function(res){
 				console.log(res);
 				for(var i=0;i<res.length;i++){
-				htmlStr+="<li><dl><dt class='dt2'><img src='img/"+res[i].url+"'/><span class='wrap2'>会员专享</span><p><i>"+res[i].beizhu+"</i></p></dt><dd><div class='ddleft'><a href='###'>"+res[i].title+"</a><br /><a href='###'>"+res[i].jiage+"</a></div><a href='###'><img src='img/car.jpg' width='36'/></a></dd></dl></li>";
+				htmlStr+="<li><dl><dt class='dt2'><img src='img/"+res[i].url+"'/><span class='wrap2'>会员专享</span><p><marquee>"+res[i].beizhu+"</marquee></p></dt><dd><div class='ddleft'><a href='###'>"+res[i].title+"</a><br /><a href='###'>"+res[i].jiage+"</a></div><a href='###'><img src='img/car.jpg' width='36'/></a></dd></dl></li>";
 				}
 				htmlStr+="</ul>";
 				$(".containerCenter").append(htmlStr);
 				xiaoguo();
 				
 				//-------------------点击改变内容-----------------------
-//					var htmlStr;
-				$(".containerTop a").click(function(){
-					$(".containerCenter").text("");
-					$.getJSON("fruit.json",function(res){
-						for(var i=0;i<res.length;i++){
-							var act=res[i].tag;
-//								console.log(act);
-							if($(this).hasClass("srkl")){
-								console.log($(this));
-								htmlStr+='<li><dl><dt><img src="img/'+res[i].url+'"/></dt><dd><div class="ddleft"><a href="###">'+res[i].title+'</a><br /><a href="###">'+res[i].jiage+'</a></div><a href="###"><img src="img/car.jpg" width="36"/></a></dd></dl></li>';
-								break;
-								htmlStr+="</ul>";
-							}
-							
-							$(".containerCenter").append(htmlStr);
-						}	
-					})
-				})
-				
 			})
 			
 			//-------------------模拟后台结束-------------------
-			//
+			//------------内容效果封装函数----------------
 			function xiaoguo(){
 				var timer0;
 				var _left=0;
@@ -125,16 +89,6 @@
 					$(this).children("p").animate({
 						"bottom":"0"
 					})
-					var m=0;
-					//----------滚动文字的滚动实现-----------（有点小问题）
-					timer0=setInterval(function(){
-						m++;
-						 _left=m*(-10);
-						$(".container ul dl dt p i").animate({
-							"left":_left+"px"
-						})
-						console.log(_left);
-					},30)
 				});
 				//--------鼠标移开--------
 				$(".container ul dl dt").mouseleave(function(){
@@ -149,7 +103,11 @@
 						"left":"0px"
 					})
 				});
-			};
+				//点击跳转购物车
+				$(".container ul dl dt img").click(function(){
+					location="http://127.0.0.1:8020/AiGuoPu/%E8%B4%AD%E7%89%A9.html"
+				});
+			}
 			
 			//---------------------没有模拟后台创建----------------------
 //			let htmlStr="<ul>";

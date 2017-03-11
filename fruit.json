@@ -1,10 +1,11 @@
 [{
 	"id":"000000",
-	"title":"万事如意礼盒",
+	"title":"生日快乐卡片",
 	"jiage":"￥198.00/1张",
 	"beizhu":"礼物礼物",
 	"chandi":"中国",
 	"tag":"srkl",
+	"youhui":"会员特价",
 	"url":"1-270x270-837-1TFD6W34.jpg"
 },{
 	"id":"000001",
@@ -12,6 +13,7 @@
 	"jiage":"￥188.00/1张",
 	"beizhu":"仙仙",
 	"tag":"zqfy",
+	"youhui":"第二件半价",
 	"chandi":"西安",
 	"url":"1-270x270-14913-AWPDWF86.jpg"
 },{
@@ -20,6 +22,7 @@
 	"jiage":"￥580.00/1张",
 	"beizhu":"礼物礼物",
 	"chandi":"北京",
+	"youhui":"会员特价",
 	"tag":"zqfy",
 	"url":"1-270x270-12266-ACAPHW81.jpg"	
 },{
@@ -29,6 +32,7 @@
 	"beizhu":"礼物礼物",
 	"chandi":"云南",
 	"tag":"zqfy",
+	"youhui":"打折商品",
 	"url":"1-270x270-102-UXSXB7Y2.jpg"	
 },{
 	"id":"000004",
@@ -37,6 +41,7 @@
 	"beizhu":"富含番茄红素的红肉橙",
 	"chandi":"美国",
 	"tag":"xg",
+	"youhui":"打折商品",
 	"url":"1-270x270-630-RWP4FC22.jpg"
 },{
 	"id":"000005",
@@ -44,6 +49,7 @@
 	"jiage":"￥49.00/1个",
 	"beizhu":"一汪蜜汁，满口细嫩",
 	"tag":"xg",
+	"youhui":"会员特价",
 	"chandi":"台湾",
 	"url":"1-270x270-8-B491CBYW.jpg"
 },{
@@ -53,6 +59,7 @@
 	"beizhu":"亲信淡雅，爽口清甜",
 	"chandi":"泰国",
 	"tag":"xg",
+	"youhui":"特卖",
 	"url":"1-270x270-639-33C6T2HP.jpg"	
 },{
 	"id":"000007",
@@ -61,6 +68,7 @@
 	"beizhu":"通透水润，汁多味甘",
 	"chandi":"智力",
 	"tag":"qqxg",
+	"youhui":"特卖",
 	"url":"1-270x270-606-5PPDC7WP.jpg"	
 },{
 	"id":"000008",
@@ -69,6 +77,7 @@
 	"beizhu":"你是我心中的snow white",
 	"chandi":"中国",
 	"tag":"xg",
+	"youhui":"会员特价",
 	"url":"1-270x270-17052-Y4U5CY6D.jpg"	
 },{
 	"id":"000009",
@@ -77,5 +86,6 @@
 	"beizhu":"滑溜香芒肉，萌翻掌心甜",
 	"chandi":"海南",
 	"tag":"qqxg",
+	"youhui":"特价",
 	"url":"1-270x270-27-DRXW9AYR.jpg"	
 }]

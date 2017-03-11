@@ -90,4 +90,47 @@ a:hover {
     float: right;
     margin: 10px; }
 
+.nav {
+  position: relative; }
+
+.shopCar {
+  position: absolute;
+  z-index: 99;
+  top: 80px;
+  right: 50px;
+  width: 400px;
+  min-height: 100px;
+  border: solid 1px #ccc;
+  background: #fff;
+  display: none;
+  padding: 10px; }
+  .shopCar i {
+    float: right;
+    background: #ADFF2F; }
+  .shopCar li {
+    border-bottom: solid 1px #ccc; }
+    .shopCar li img {
+      float: left; }
+    .shopCar li .right {
+      float: left;
+      margin-left: 10px; }
+      .shopCar li .right p {
+        line-height: 10px; }
+      .shopCar li .right input {
+        width: 30px; }
+
+.shopping {
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  border: solid 1px #0f0;
+  position: fixed;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  left: 500px;
+  top: 300px;
+  z-index: 100;
+  display: none; }
+
 /*# sourceMappingURL=nav.css.map */

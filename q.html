@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="img/1-270x270-102-UXSXB7Y2.jpg" class="000006"/>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			$(function(){
+				$.getJSON("fruit.json",function(res){
+					console.log(res);
+					var a;
+						$("img").click(function(){
+							for(var i=0;i<res.length;i++){
+							a=res[i].id;
+							if($(this).hasClass(a)){
+								console.log(a);
+								console.log(i);
+							}
+						}
+					})
+				})
+				
+			})
+		</script>
+	</body>
+</html>
