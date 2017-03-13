@@ -103,4 +103,45 @@ a {
   .up a:hover {
     color: #f00; }
 
+.container {
+  width: 1350px; }
+  .container .containerLeftMin {
+    float: left;
+    margin-left: 150px; }
+    .container .containerLeftMin li {
+      border: solid 1px #ff0;
+      margin: 10px;
+      width: 150px;
+      height: 150; }
+    .container .containerLeftMin .active {
+      border: solid 2px #f00; }
+    .container .containerLeftMin img {
+      width: 100%; }
+  .container .containerLeftMax {
+    float: left;
+    border: solid 1px #ff0;
+    margin: 10px;
+    width: 480px; }
+    .container .containerLeftMax img {
+      width: 100%; }
+  .container .containerRight {
+    float: left;
+    margin: 10px; }
+    .container .containerRight p {
+      height: 30px; }
+      .container .containerRight p input {
+        width: 60px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center; }
+      .container .containerRight p .buy {
+        width: 150px;
+        margin-top: 20px; }
+      .container .containerRight p .car {
+        width: 150px; }
+    .container .containerRight .containerRightBottom {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: #ccc solid 1px; }
+
 /*# sourceMappingURL=fruit.css.map */

@@ -118,6 +118,8 @@ a:hover {
         line-height: 10px; }
       .shopCar li .right input {
         width: 30px; }
+      .shopCar li .right .del {
+        margin-left: 100px; }
 
 .shopping {
   width: 200px;

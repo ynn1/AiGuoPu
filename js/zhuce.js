@@ -1,6 +1,8 @@
 $(function(){
 	$(".nav").load("nav.html");
-	$(".nav .center li:eq(0)").removeClass("active");
+	setTimeout(function(){
+		$(".nav .center li:eq(0)").removeClass("active");
+	},30)
 	$(".footer").load("footer.html");
 //			console.log($(".pwdtxt1").text());
 	//选择登录还是注册
@@ -136,17 +138,29 @@ $(function(){
 		//注册提交
 		
 		$(".zhuce").click(function(){				
-//					$(".nametxt2").text("");
-//					$(".pwdtxt2").text("");
-//					$(".nextpwdtxt2").text("");
-//					$(".yzmtxt").text("");
 			if(($(".nametxt2").text()=="")&&($(".pwdtxt2").text()=="")&&($(".nextpwdtxt2").text()=="")&&($(".yzmtxt").text()=="")&&($(".name2").val()!="")&&($(".pwd2").val()!="")&&($(".nextpwd2").val()!="")&&($(".yzm").val()!="")){
 //						alert("注册成功!");
-				location="https://huodong.fruitday.com/cms/indexpc/1201?region_id=106092";
-				$(".name2").val("");
-			$(".pwd2").val("");
-			$(".nextpwd2").val("");
-			$(".yzm").val("");
+//				location="https://huodong.fruitday.com/cms/indexpc/1201?region_id=106092";
+//				$(".name2").val("");
+	//			$(".pwd2").val("");
+	//			$(".nextpwd2").val("");
+	//			$(".yzm").val("");
+			//-------------提交到数据库-----------
+			$.post("zhuce.php",
+					{
+						"userName":$(".name2").val(),
+						"userPwd":$(".pwd2").val()
+					},
+					function(data){
+//						alert(data);
+						alert("注册成功！");
+						location="https://huodong.fruitday.com/cms/indexpc/1201?region_id=106092";
+						$(".name2").val("");
+						$(".pwd2").val("");
+						$(".nextpwd2").val("");
+						$(".yzm").val("");
+					}
+			)
 			}else{
 				alert("请完善注册信息");
 			}

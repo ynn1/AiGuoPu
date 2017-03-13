@@ -57,5 +57,15 @@
       margin-top: 50px;
       padding-top: 20px;
       border-top: #ccc solid 1px; }
+  .container .containerBottom {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 50px; }
+    .container .containerBottom span {
+      float: left;
+      margin: 15px; }
+    .container .containerBottom .jianjie {
+      clear: both; }
 
 /*# sourceMappingURL=shop.css.map */

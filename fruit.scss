@@ -126,5 +126,73 @@ a{
     a:hover{
         color:#f00;
     }
-    
+}
+//
+//-------------商品详情部分-----------------
+.container{
+    width:$Width;
+    .containerLeftMin{
+        float:left;
+        margin-left:150px;
+        li{
+            border:solid 1px #ff0;
+            margin:10px;
+            width:150px;
+            height:150;
+        }
+        .active{
+            border:solid 2px #f00;
+        }
+        img{
+            width:100%;
+        }
+    }
+    .containerLeftMax{
+        float:left;
+        border:solid 1px #ff0;
+        margin:10px;
+        width:480px;
+        img{
+            width:100%;
+        }
+    }
+    .containerRight{
+        float:left;
+//      float:right;
+        margin:10px;
+        p{
+            height:30px;
+            input{
+                width:60px;
+                height:30px;
+                font-size:20px;
+                text-align:center;  
+            }
+            .buy{
+                width:150px;
+                margin-top:20px;
+            }
+            .car{
+                width:150px;
+            }
+        }
+        .containerRightBottom{
+            margin-top:50px;
+            padding-top:20px;
+            border-top:#ccc solid 1px;
+        }
+    }
+//  .containerBottom{
+//      clear: both;
+//      width:1000px;
+//      margin-left:150px;
+//      min-height: 50px;
+//      span{
+//          float:left;
+//          margin:15px;
+//      }
+//      .jianjie{
+//          clear:both;
+//      }
+//  }
 }

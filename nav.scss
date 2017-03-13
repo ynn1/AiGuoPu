@@ -116,7 +116,6 @@ a:hover{
     min-height:100px;
     border:solid 1px #ccc;
     background:#fff;
-//  background:rgba(0,0,0,0.4);
     display:none;
     i{
         float:right;
@@ -136,6 +135,9 @@ a:hover{
             }
             input{
                 width:30px;
+            }
+            .del{
+                margin-left:100px;
             }
         }
     }

@@ -72,4 +72,17 @@ $Width:1350px;
             border-top:#ccc solid 1px;
         }
     }
+    .containerBottom{
+        clear: both;
+        width:1000px;
+        margin:0 auto;
+        min-height: 50px;
+        span{
+            float:left;
+            margin:15px;
+        }
+        .jianjie{
+            clear:both;
+        }
+    }
 }
